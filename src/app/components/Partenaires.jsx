@@ -34,8 +34,6 @@ const Clients = () => {
   return (
     <section className={styles.container}>
 
-      <h2>Ils nous font confiance</h2>
-
       <div className={styles.band}>
         <div className={styles.trackLeft}>
           {[...row1, ...row1].map((logo, i) => (

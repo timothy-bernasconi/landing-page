@@ -6,7 +6,7 @@ import styles from './Services.module.scss'
 const nosServices = [
     {
         id: 2,
-        name: "Création de module de Formation",
+        name: "Création module de Formation",
         desc: "Prenez enfin le contrôle de votre stratégie numérique avec nos programmes de formation sur mesure. Que vous cherchiez à dompter les réseaux sociaux, valoriser vos offres ou bâtir une image forte, notre équipe vous guide pas à pas. Profitez d'un apprentissage ciblé pour ne plus jamais dépendre de prestataires externes.",
         icon: "fa-solid fa-person-chalkboard"
     },
@@ -36,7 +36,7 @@ const nosServices = [
     },
     {
         id: 7,
-        name: "Conseil en visibilité et marketing",
+        name: "Conseil visibilité et marketing",
         desc: "Se démarquer sur un marché saturé est un défi complexe pour chaque entreprise. Notre service d'accompagnement stratégique est spécialement pensé pour maximiser votre impact commercial. Nous analysons vos besoins réels et déployons des plans d'action concrets pour vous aider à atteindre vos objectifs de croissance futurs.",
         icon: "fa-brands fa-adversal"
     }
