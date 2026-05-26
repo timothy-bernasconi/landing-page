@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 25px;
+    gap: 30px;
+    margin-bottom: 4rem;
+
+    
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
+
+    .card {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 45px;
+        text-align: center;
+        border-radius: 25px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.021);
+        box-shadow: 6px 1px 7px rgba(0, 0, 0, 0.164);
+        backdrop-filter: blur(1px);
+        opacity: 0;
+        transform: translateY(20px);
+        height: 100%;
+        box-sizing: border-box;
+        transition: background-color 0.8s ease,
+                    transform 1s cubic-bezier(0.22, 1, 0.36, 1),
+                    box-shadow 0.3s ease,
+                    opacity 1s cubic-bezier(0.22, 1, 0.36, 1);
+
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.096);
+            transform: translateY(-5px);
+            box-shadow: 6px 10px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        i {
+            font-size: 2.5rem;
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+
+      button {
+            height: 55px;
+            width: auto;
+            border-radius: 25px;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            padding: 0 35px;
+            border: 1px solid rgba(255, 255, 255, 0.445);
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease,
+                        box-shadow 0.3s ease,
+                        transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.096);
+                box-shadow: 0px 0px 25px rgba(64, 224, 208, 0.4);
+                transform: translateY(-3px);
+            }
+        }
+}

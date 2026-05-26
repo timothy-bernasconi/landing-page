@@ -1,0 +1,142 @@
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+    padding: 40px 0;
+
+  opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    padding: 20px 0;
+  }
+}
+
+.track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  padding: 0 15%;  // exactement (100 - 70) / 2
+}
+
+.slide {
+  min-width: 70%;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid white;
+  opacity: 0.4;
+  transform: scale(0.95);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    min-width: 85%;
+  }
+
+  &.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .image {
+    object-fit: cover;
+    object-position: center;
+    height: 550px;
+    width: 100%;
+    display: block;
+
+    @media (max-width: 768px) {
+      height: 330px;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 35px 35px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+
+    h3 {
+      color: white;
+      font-size: 1.8rem;
+      margin: 0 0 8px;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: white;
+      font-size: 1rem;
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+
+  &.active .overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  width: 60px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  z-index: 20;
+
+  &:hover { background: var(--text-body); }
+  &.prev { left: 20px; }
+  &.next { right: 20px; }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &.activeDot {
+    background: white;
+    width: 24px;
+    border-radius: 4px;
+  }
+}

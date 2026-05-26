@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("/assets/background.jpg"); 
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+
+.content {
+  position: relative; 
+  width: 100%;
+  min-height: 80vh;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;   
+
+  .bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1;
+  }
+
+  .textContent {
+    position: relative;
+    z-index: 2; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 20px 100px 20px; 
+
+    .mainTitle {
+      font-size: 3rem;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      max-width: 800px;
+      margin: 0;
+
+      @media (min-width: 990px) {
+        font-size: 6rem;
+      }
+    }
+  }
+}
