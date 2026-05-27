@@ -1,5 +1,5 @@
 .container {
-  background-color: #111; 
+  background-color: black;
   color: #fff;
   padding: 60px 20px 30px 20px;
   font-family: sans-serif;
@@ -16,6 +16,9 @@
 
   .brand {
   max-width: 350px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   img {
     height: 120px; 

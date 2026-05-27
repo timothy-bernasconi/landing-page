@@ -1,4 +1,3 @@
-
 "use client"
 import React, { useEffect, useRef } from 'react'
 import styles from './CTA.module.scss'
@@ -13,7 +12,7 @@ const CTA = () => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add(styles.visible);
-                    observer.unobserve(entry.target); // se déclenche une seule fois
+                    observer.unobserve(entry.target); 
                 }
             });
         },
@@ -30,7 +29,7 @@ const CTA = () => {
       <div className={styles.card} ref={cardRef}>
         <h2>Prêt à booster votre com ?</h2>
         <p>Votre projet mérite une communication à la hauteur. Parlons-en ensemble et construisons une stratégie qui vous ressemble.</p>
-        <button onClick={() => window.location.href = 'tel:+33622589579'}>Nous contacter</button>
+        <a href="#form"><button>Nous contacter</button></a>
       </div>
     </div>
   )

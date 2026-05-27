@@ -5,41 +5,35 @@ import Carousel from './components/Carousel'
 import CTA from './components/CTA'
 import {Hero} from './components/Hero'
 import Partenaires from './components/Partenaires'
-const carouselPic = [
+import Objectives from './components/Objectives'
+import Form from './components/Form'
 
+
+const carouselPic = [
   { 
     id: 1, 
-    title: "Site Web", 
-    img: "/assets/realisation.avif",
-    desc : "Création site web vitrine pour Alpes Batteries"
-   
+    title: "Production Vidéo", 
+    img: "/assets/realisation5.jpg",
+    desc: "Captation et montage de formats courts"
   },
-
   { 
     id: 2, 
-    title: "Site Web", 
-    img: "/assets/realisation2.png",
-    desc : "Création Catalogue pour SEDC"
- 
+    title: "Studio Podcast", 
+    img: "/assets/realisation1.jpg",
+    desc: "Enregistrement et post-production audio"
   },
-
   { 
     id: 3, 
-    title: "Site Web", 
-    img: "/assets/realisation3.avif",
-    desc : "Création vidéo pour MyBeers Annemasse"
-  
+    title: "Shooting Corporate", 
+    img: "/assets/realisation3.jpg",
+    desc: "Portraits professionnels et image de marque"
   },
-
   { 
     id: 4, 
-    title: "Site Web", 
-    img: "/assets/realisation4.png",
-    desc : "Organisation évènements aux Gets"
-   
+    title: "Photographie Produit", 
+    img: "/assets/realisation4.jpg",
+    desc: "Visuels studio haute définition"
   }
-
-
 ];
 
 const textesAAnimer = [
@@ -56,8 +50,7 @@ const page = () => {
 
       
      <div className={styles.content}>
-    
-    
+        
     <video 
       src="/assets/bg-video.mp4" 
       autoPlay 
@@ -65,12 +58,12 @@ const page = () => {
       muted 
       playsInline 
       className={styles.bgVideo}
-    />
+    /> 
     
 
     <div className={styles.textContent}>
       <h1 className={styles.mainTitle}> 
-        Le stud x Agir
+        Le Stud by Agir
         <Hero 
           words={textesAAnimer} 
           speed={80}       
@@ -82,12 +75,16 @@ const page = () => {
     
   </div>
         
-
-         <Services/>
+              <Services/>      
+        
+          <Objectives />
+          <CTA/> 
+    
    
          <Carousel data={carouselPic}/>
          <Partenaires/>
-         <CTA/>
+   
+         <Form/>
        
        
    

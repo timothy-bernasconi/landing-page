@@ -11,7 +11,7 @@ const Footer = () => {
 
         <div className={styles.brand}>
           <img src="/assets/logo-le-stud.png" alt="Le Stud - AGIR en Com" />
-          <p>Votre réussite est notre priorité.</p>
+          <img src="/assets/logo-agir.png" alt="AGIR en Com" />
         </div>
 
    
