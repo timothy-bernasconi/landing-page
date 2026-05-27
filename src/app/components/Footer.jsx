@@ -27,7 +27,7 @@ const Footer = () => {
         <p>© {new Date().getFullYear()} AGIR en Com — Tous droits réservés</p>
         <div className={styles.legalLinks}>
           <Link href="/mentions">Mentions légales</Link>
-          <Link href="/confidentialite">Confidentialité</Link>
+          <Link href="/politique">Confidentialité</Link>
         </div>
       </div>
 
