@@ -6,7 +6,7 @@ import styles from './Services.module.scss'
 const nosServices = [
     {
         id: 2,
-        name: "Création module de Formation",
+        name: "Création module Formation",
         desc: "Prenez enfin le contrôle de votre stratégie numérique avec nos programmes de formation sur mesure. Que vous cherchiez à dompter les réseaux sociaux, valoriser vos offres ou bâtir une image forte, notre équipe vous guide pas à pas. Profitez d'un apprentissage ciblé pour ne plus jamais dépendre de prestataires externes.",
         icon: "fa-solid fa-person-chalkboard"
     },

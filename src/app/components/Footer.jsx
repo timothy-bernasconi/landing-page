@@ -17,7 +17,7 @@ const Footer = () => {
    
         <div className={styles.contactInfo}>
           <h4>Contact</h4> <br />
-          <a href="mailto:contact@agirencom.fr"><p>contact@agirencom.fr</p> </a> <br />
+          <a href="mailto:contact@agirencom.fr"><p>agirerd@agirencom.com</p> </a> <br />
           <a href="tel:+6 22 58 95 79"><p>06 22 58 95 79</p></a>
         </div>
 
@@ -26,7 +26,7 @@ const Footer = () => {
       <div className={styles.bottom}>
         <p>© {new Date().getFullYear()} AGIR en Com — Tous droits réservés</p>
         <div className={styles.legalLinks}>
-          <Link href="/mentions-legales">Mentions légales</Link>
+          <Link href="/mentions">Mentions légales</Link>
           <Link href="/confidentialite">Confidentialité</Link>
         </div>
       </div>
