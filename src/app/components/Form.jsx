@@ -67,7 +67,7 @@ function Form() {
 
   return (
     <div className={styles.group} id='form'>
-      <h2>Nous contacter</h2>
+    
       <div className={styles.container}>
         <form className={styles.wrapper} onSubmit={handleSubmit}>
           <div style={{ display: 'none' }} aria-hidden="true">

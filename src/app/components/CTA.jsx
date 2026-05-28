@@ -27,7 +27,7 @@ const CTA = () => {
   return (
     <div className={styles.container}>
       <div className={styles.card} ref={cardRef}>
-        <h2>Prêt à booster votre com ?</h2>
+        <h2>Transformons vos idées en impact</h2>
         <p>Votre projet mérite une communication à la hauteur. Parlons-en ensemble et construisons une stratégie qui vous ressemble.</p>
         <a href="#form"><button>Nous contacter</button></a>
       </div>

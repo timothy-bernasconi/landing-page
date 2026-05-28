@@ -51,7 +51,9 @@ export const Services = () => {
 }, []);
 
     return (
+        
         <div className={styles.container}>
+            
             {nosServices.map((p, index) =>
                 <li key={p.id}>
                     <div className={styles.wrapper}>

@@ -57,11 +57,12 @@
     background: #ffffff00;
     transition: all 0.3s ease;
     box-sizing: border-box;
+    color: #f7f5f5;
 
     &:focus {
       outline: none;
       border-color: #428693;
-      background-color: #fff;
+      background-color: #ffffff11;
       box-shadow: 0 0 0 4px rgba(144, 35, 38, 0.1);
     }
   }

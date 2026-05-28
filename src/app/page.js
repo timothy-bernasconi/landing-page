@@ -7,6 +7,7 @@ import {Hero} from './components/Hero'
 import Partenaires from './components/Partenaires'
 import Objectives from './components/Objectives'
 import Form from './components/Form'
+import AvisAgence from './components/AvisAgence'
 
 
 const carouselPic = [
@@ -44,6 +45,12 @@ const textesAAnimer = [
   "Publicité Méta"
 ];
 
+const avisAnnemasse = [
+  { id: 1, name: "Audrey D.", star: 5, text: "Arnault est le synonyme de réactivité et professionnalisme. Il est efficace et passionné. La qualité de son travail est incroyable. Je suis très reconnaissante d'avoir fait appel à son service. Je recommande à 10000%" },
+  { id: 2, name: "Florian R.", star: 5, text: "Cette agence de communication événementielle et vidéo est très professionnelle et compétente. Ils ont su répondre à toutes mes demandes et ont créé une vidéo promotionnelle qui a eu un impact significatif sur mon entreprise." },
+  { id: 3, name: "Loïc B.", star: 5, text: "C'est la deuxième fois que je sollicite l'équipe d'Agir pour une prestation de shooting photo. Arnauld et son équipe ont parfaitement su répondre à mes attentes et mes besoins. Les visuels livrés sont de super qualité et parfaits pour communiquer mon travail sur les réseaux. Merci à eux, je recommande leurs services !" },
+];
+
 const page = () => {
   return (
     <div className={styles.container}>
@@ -75,15 +82,22 @@ const page = () => {
     
   </div>
         
+        <h2 className={styles.secondTitle}>Passez à la vitesse supérieure avec Le Stud</h2>
               <Services/>      
         
-          <Objectives />
-          <CTA/> 
+          {/* <Objectives /> */}
+         
     
    
          <Carousel data={carouselPic}/>
+         <CTA/> 
+         <h2 className={styles.secondTitle}>Des collaborations qui marquent</h2>
+         <AvisAgence
+         titre = "Vos retours du Stud'"
+         listeAvis={avisAnnemasse}/>
+         <h2 className={styles.secondTitle}>Ils nous font confiance</h2>
          <Partenaires/>
-   
+          <h2 className={styles.secondTitle}>Donnons vie à votre projet</h2>
          <Form/>
        
        
