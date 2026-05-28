@@ -5,7 +5,6 @@ import Carousel from './components/Carousel'
 import CTA from './components/CTA'
 import {Hero} from './components/Hero'
 import Partenaires from './components/Partenaires'
-import Objectives from './components/Objectives'
 import Form from './components/Form'
 import AvisAgence from './components/AvisAgence'
 
@@ -14,25 +13,25 @@ const carouselPic = [
   { 
     id: 1, 
     title: "Production Vidéo", 
-    img: "/assets/realisation5.jpg",
+    img: "/assets/POST BACKSTAGE LE STUD 3.PNG",
     desc: "Captation et montage de formats courts"
   },
   { 
     id: 2, 
     title: "Studio Podcast", 
-    img: "/assets/realisation1.jpg",
+    img: "/assets/BACKSTAGE 4 PATRICK.png",
     desc: "Enregistrement et post-production audio"
   },
   { 
     id: 3, 
     title: "Shooting Corporate", 
-    img: "/assets/realisation3.jpg",
+    img: "/assets/DUO MARIAGE 1.png",
     desc: "Portraits professionnels et image de marque"
   },
   { 
     id: 4, 
     title: "Photographie Produit", 
-    img: "/assets/realisation4.jpg",
+    img: "/assets/PATISSERIE_VILLARD_TABLE_AGIR_EN_COM (40).jpg",
     desc: "Visuels studio haute définition"
   }
 ];

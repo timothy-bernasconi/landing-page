@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="color-scheme" content="only light" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
-        <title> Le stud x Agir </title> 
+        <title> Le Stud By Agir </title> 
         
       </head>
     

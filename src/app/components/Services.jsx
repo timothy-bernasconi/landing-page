@@ -6,13 +6,13 @@ import styles from './Services.module.scss'
 const nosServices = [
     {
         id: 1,
-        name: "Production Photographique",
-        desc: "Nous donnons vie à votre image de marque, qu'il s'agisse de capturer votre professionnalisme en portrait ou de sublimer vos produits. Grâce à une maîtrise technique du studio et de la mise en scène, nous créons des visuels sur mesure, haute définition, conçus pour maximiser votre impact et votre taux de conversion.",
+        name: "Réalisations vidéo",
+        desc: "Nous donnons vie à votre image de marque, qu'il s'agisse de capturer votre professionnalisme en portrait ou de sublimer vos produits. Grâce à une maîtrise technique du studio et de la mise en scène, nous créons des visuels sur mesure, conçus pour maximiser votre impact et votre taux de conversion.",
         icon: "fa-solid fa-camera"
     },
     {
         id: 2,
-        name: "Création capsule vidéo",
+        name: "Capsules digitales",
         desc: "Dynamisez votre communication avec des formats courts et percutants, parfaitement adaptés aux réseaux sociaux. De l'écriture du script au montage final, nous produisons des contenus vidéos immersifs qui captent l'attention en quelques secondes et favorisent l'engagement de votre audience.",
         icon: "fa-solid fa-video"
     },
