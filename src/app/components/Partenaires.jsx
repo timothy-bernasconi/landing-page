@@ -34,17 +34,7 @@ const Clients = () => {
   return (
     <section className={styles.container}>
 
-      <div className={styles.band}>
-        <div className={styles.trackLeft}>
-          {[...row1, ...row1].map((logo, i) => (
-            <div key={i} className={styles.logo}>
-              <Image src={logo.src} alt={logo.alt} width={140} height={60} />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className={styles.band}>
+          <div className={styles.band}>
         <div className={styles.trackRight}>
           {[...row2, ...row2].map((logo, i) => (
             <div key={i} className={styles.logo}>

@@ -42,17 +42,9 @@
         transparent 100%
     );
 
-    &:hover .trackLeft,
     &:hover .trackRight {
         animation-play-state: paused;
     }
-}
-
-.trackLeft {
-    display: flex;
-    gap: 40px;
-    width: max-content;
-    animation: scrollLeft 30s linear infinite;
 }
 
 .trackRight {

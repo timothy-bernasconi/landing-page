@@ -82,12 +82,7 @@ const page = () => {
   </div>
         
         <h2 className={styles.secondTitle}>Passez à la vitesse supérieure avec Le Stud</h2>
-              <Services/>      
-        
-          {/* <Objectives /> */}
-         
-    
-   
+         <Services/>         
          <Carousel data={carouselPic}/>
          <CTA/> 
          <h2 className={styles.secondTitle}>Des collaborations qui marquent</h2>
@@ -96,7 +91,7 @@ const page = () => {
          listeAvis={avisAnnemasse}/>
          <h2 className={styles.secondTitle}>Ils nous font confiance</h2>
          <Partenaires/>
-          <h2 className={styles.secondTitle}>Donnons vie à votre projet</h2>
+         <h2 className={styles.secondTitle}>Donnons vie à votre projet</h2>
          <Form/>
        
        
