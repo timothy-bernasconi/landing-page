@@ -13,25 +13,25 @@ const carouselPic = [
   { 
     id: 1, 
     title: "Production Vidéo", 
-    img: "/assets/POST BACKSTAGE LE STUD 3.PNG",
+    img: "/assets/realisation1.PNG",
     desc: "Captation et montage de formats courts"
   },
   { 
     id: 2, 
     title: "Studio Podcast", 
-    img: "/assets/BACKSTAGE 4 PATRICK.png",
+    img: "/assets/realisation2.png",
     desc: "Enregistrement et post-production audio"
   },
   { 
     id: 3, 
     title: "Shooting Corporate", 
-    img: "/assets/DUO MARIAGE 1.png",
+    img: "/assets/realisation3.png",
     desc: "Portraits professionnels et image de marque"
   },
   { 
     id: 4, 
     title: "Photographie Produit", 
-    img: "/assets/PATISSERIE_VILLARD_TABLE_AGIR_EN_COM (40).jpg",
+    img: "/assets/realisation4.jpg",
     desc: "Visuels studio haute définition"
   }
 ];
