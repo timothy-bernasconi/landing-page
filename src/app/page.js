@@ -13,7 +13,7 @@ const carouselPic = [
   { 
     id: 1, 
     title: "Production Vidéo", 
-    img: "/assets/realisation1.PNG",
+    img: "/assets/realisation1.png",
     desc: "Captation et montage de formats courts"
   },
   { 
